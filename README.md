@@ -141,8 +141,7 @@ Add this line to your Gemfile:
 3. add the data to the result: `result.user_name = 'Test User'`
 4. read the data back from the result: `result.user_name #=> 'Test User'`
 
-> **Note**: you can also set the data when creating the result: 
->   `result = ResultVault.new(user_name: 'Test User')`
+> **Note:** <br/> Data can be set on creation: `ResultVault.new(user_name: 'Test User')`
 
 In this example a call to `:average` retuns the total, size and average of an Array of Integers:
 
@@ -176,7 +175,7 @@ result.user_name = 'Test User'
 result.user_name  #=> 'Test User'
 ```
 
-> _NOTE_: Internally, **ResultVault** does **not** create dynamic getters & setters, so the method look-up chain remains unchanged & performant.
+> **Note:** <br/> Internally, **ResultVault** does **not** create dynamic getters & setters, so the method look-up chain remains unchanged & performant.
 
 ---
 
@@ -196,7 +195,7 @@ result.user_name  #=> 'Test User'
 
 
 There are five methods pre-defined to help developers easily determine
-success or failue, what went wrong, what's the cuurent status & to
+success or failue, what went wrong, what's the current status & to
 inspect the vault contents.
 
 > Having these methods pre-defined provides a base structure for developers, improving familiarity.
@@ -295,7 +294,7 @@ result    = average(num_array)
 result.data #=> {:total=>15, :size=>5, :average=>3, :success=>true, :status=>nil, :error_message=>""}
 ```
 
-> **Note**: `:data` cannot be set directly.
+> **Note:** <br/>`:data` cannot be set directly.
 
 ---
 
@@ -338,7 +337,7 @@ result.new_data  = "My Name" #=> This result vault may no longer be modified (Ru
 > - [Reporting issues](#reporting-issues)
 > - [Pull requests](#pull-requests)
 
-In all cases please respect our [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
+In all cases please respect our [Contributor Code of Conduct](#code-of-conduct).
 
 
 <a name='security-issues'></a>
