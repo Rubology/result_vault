@@ -80,6 +80,17 @@ RSpec.describe ResultVault, type: :model do
       it "sets the exception value" do
         expect{result.exception= ArgumentError.new}.not_to raise_error
       end
+
+      it "updates the error message if blank" do
+        result.exception= ArgumentError.new
+        expect(result.error_message).to eq(result.exception.to_s)
+      end
+
+      it "leaves an existing error message unchanged" do
+        result.error_message = "Test message"
+        result.exception= ArgumentError.new
+        expect(result.error_message).to eq("Test message")
+      end
     end # :exception=
 
 
