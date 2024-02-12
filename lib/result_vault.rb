@@ -202,7 +202,8 @@ class ResultVault
 
     when :exception
       _assert_valid_exception(val)
-      @exception = val
+      @exception     = val
+      @error_message = exception.to_s if [nil, ""].include?(@error_message)
 
     when :success, :ok, :good, :pass, :passed, :succeeded
       @success = !!val

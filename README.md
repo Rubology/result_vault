@@ -255,7 +255,6 @@ def failing_method
    1/0
 rescue => e
    result.exception = e
-   result.error_message = e.to_s
 ensure
    return result
 end
@@ -266,12 +265,25 @@ result.error_message       #=> "divided by 0"
 result.exception           #=> #<ZeroDivisionError: divided by 0>
 result.exception.backtrace #=> [..........]
 ```
+> **Note:** <br/>`:error_message` is set automatically if not previously set.
 
 <a name='error_message'></a>
 ### :error_message
 
+
 The `:error_message` allows for a readable error message, and can be
-used even when there is no exeption recorded. (see above example)
+used even when there is no exeption recorded.
+
+```ruby
+def test_method
+   result = ResultVault.new
+   result.error_message = "Test message"
+   return result
+end
+
+result = test_method
+result.error_message    #=> "Test message"
+```
 
 
 <a name='data'></a>
