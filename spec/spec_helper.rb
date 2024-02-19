@@ -1,27 +1,23 @@
 # frozen_string_literal: true
 
-require_relative '../lib/result_vault'
-
 # ======================================================================
 # = SimpleCov
 # ======================================================================
+require 'simplecov'
 
-# Only calculate coverage when Simplecov is intsalled
-begin
-  puts "\nInitializing simplecov"
-  require 'simplecov'
-
-  # set output to Coberatura XML if using Testspace analysis
-  if ENV['FOR_TESTSPACE']
-    require 'simplecov-cobertura'
-    SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
-  end
-
-  # start it up
-  SimpleCov.start
-rescue StandardError
-  # nothing to do here
+SimpleCov.configure do
+  # exclude tests
+  add_filter 'spec'
 end
+
+# set auto-fail is less than 100% coverage
+SimpleCov.minimum_coverage(100) if ENV['FAIL_ON_MINIMUM']
+
+# start it up
+SimpleCov.start
+
+# require AFTER simpleCOv has started to ensure inclusion in metrics
+require_relative '../lib/result_vault'
 
 # ======================================================================
 # = RSpec Config

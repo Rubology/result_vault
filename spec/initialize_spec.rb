@@ -1,7 +1,4 @@
-
-
 RSpec.describe ResultVault, type: :model do
-
   # ======================================================================
   #  Initialize
   # ======================================================================
@@ -30,18 +27,17 @@ RSpec.describe ResultVault, type: :model do
       end
     end # on success
 
-
     context 'key validation' do
       it 'raises an ArgumentError if the key is not a symbol' do
-        expect{ResultVault.new('meth_1' => :answer_1)}.to raise_error ArgumentError, /Symbol/
+        expect { ResultVault.new('meth_1' => :answer_1) }.to raise_error ArgumentError, /Symbol/
       end
 
       it ':data raises a RuntimeError' do
-        expect{ResultVault.new(data: {test_1: 'One'})}.to raise_error ArgumentError, /:data is a reserved keyword/
+        expect { ResultVault.new(data: { test_1: 'One' }) }.to raise_error ArgumentError, /:data is a reserved keyword/
       end
 
       it ':exception raises an ArgumentError when the value is not an Exception' do
-        expect{ResultVault.new(exception: 'test string')}.to raise_error ArgumentError, /Exception/
+        expect { ResultVault.new(exception: 'test string') }.to raise_error ArgumentError, /Exception/
       end
 
       it ':exception sets the val when the value is an Exception' do
@@ -80,5 +76,4 @@ RSpec.describe ResultVault, type: :model do
       end
     end # key validation
   end # on initialize
-
 end

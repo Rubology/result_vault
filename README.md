@@ -13,14 +13,17 @@
 [//]: # "############################################"
 
 
-| General | Main Branch| Dev Branch|
-|---|---|---|
-| [![Gem Version](https://badge.fury.io/rb/result_vault.svg)](https://badge.fury.io/rb/result_vault) | [![Space Metric](https://rubology.testspace.com/spaces/259056/metrics/527287/badge?token=2f29639265a07990dea91b5f2bd5e31a207fc498)](https://rubology.testspace.com/spaces/259056/current/Code%20Coverage?utm_campaign=metric&utm_medium=referral&utm_source=badge "Code Coverage (lines)")  | [![Space Metric](https://rubology.testspace.com/spaces/258801/metrics/527285/badge?token=1727e9cc24d828d9a9649ea1555a1176cf5d6291)](https://rubology.testspace.com/spaces/258801/current/Code%20Coverage?utm_campaign=metric&utm_medium=referral&utm_source=badge "Code Coverage (lines)")  |
-| [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](#license)  | ![ruby 3.3](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_3.yml/badge.svg?branch=main) | ![ruby 3.3](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_3.yml/badge.svg?branch=dev) |
-| | ![ruby 3.2](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_2.yml/badge.svg?branch=main) | ![ruby 3.2](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_2.yml/badge.svg?branch=dev) |
-| | ![ruby 3.1](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_1.yml/badge.svg?branch=main) | ![ruby 3.1](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_1.yml/badge.svg?branch=dev) |
-| | ![ruby 3.0](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_0.yml/badge.svg?branch=main) | ![ruby 3.0](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_0.yml/badge.svg?branch=dev) |
-| | ![ruby 2.7](https://github.com/Rubology/result_vault/actions/workflows/ruby_2_7.yml/badge.svg?branch=main) | ![ruby 2.7](https://github.com/Rubology/result_vault/actions/workflows/ruby_2_7.yml/badge.svg?branch=dev) |
+| Main Branch| Dev Branch|
+|---|---|
+| ![ruby 3.3](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_2.yml/badge.svg?branch=main) | ![ruby 3.3](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_2.yml/badge.svg?branch=dev) |
+| ![ruby 3.2](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_2.yml/badge.svg?branch=main) | ![ruby 3.2](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_2.yml/badge.svg?branch=dev) |
+| ![ruby 3.1](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_1.yml/badge.svg?branch=main) | ![ruby 3.1](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_1.yml/badge.svg?branch=dev) |
+| ![ruby 3.0](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_0.yml/badge.svg?branch=main)  | ![ruby 3.0](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_0.yml/badge.svg?branch=dev)  |
+| ![ruby 2.7](https://github.com/Rubology/result_vault/actions/workflows/ruby_2_7.yml/badge.svg?branch=main) | ![ruby 2.7](https://github.com/Rubology/result_vault/actions/workflows/ruby_2_7.yml/badge.svg?branch=dev) |
+| &nbsp; |  |
+| [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](#license)  | [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](#license) |
+| [![Gem Version](https://badge.fury.io/rb/result_vault.svg)](https://badge.fury.io/rb/result_vault) | [![Gem Version](https://badge.fury.io/rb/result_vault.svg)](https://badge.fury.io/rb/result_vault) |
+| ![100% Coverage](https://github.com/Rubology/result_vault/actions/workflows/code_coverage.yml/badge.svg?branch=main) | ![100% Coverage](https://github.com/Rubology/result_vault/actions/workflows/code_coverage.yml/badge.svg?branch=dev) |
 
 
 
