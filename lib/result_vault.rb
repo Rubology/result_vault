@@ -111,10 +111,28 @@ class ResultVault
 
 
   ##
+  # Set multiple data in a single call
+  #
+  # @param [Hash] args
+  #
+  def update(**args)
+    args.each do |k, v|
+      if k.is_a?(Symbol)
+        send("#{k.downcase}=", v)
+      else
+        fail ArgumentError, ":update argument key not a Symbol: '#{k}'."
+      end
+    end
+
+    return self
+  end
+
+
+  ##
   # Raise an exception if the user is setting data directly
   #
   def data=(*)
-    fail ArgumentError, ":data is a reserved keyword and may not be set directly."
+    fail ArgumentError, "use :update to set or update results."
   end
 
 

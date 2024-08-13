@@ -44,6 +44,7 @@
     - [:exception](#exception)
     - [:error_message](#error_message)
     - [:data](#data)
+    - [:update](#update)
 - [freezing results](#freezing)
 - [change log](CHANGELOG.md)
 - [code of conduct](#code-of-conduct)
@@ -195,6 +196,7 @@ result.user_name  #=> 'Test User'
 - [:exception](#exception)
 - [:error_message](#error_message)
 - [:data](#data)
+- [:update](#update)
 
 
 There are five methods pre-defined to help developers easily determine
@@ -309,7 +311,32 @@ result    = average(num_array)
 result.data #=> {:total=>15, :size=>5, :average=>3, :success=>true, :status=>nil, :error_message=>""}
 ```
 
-> **Note:** <br/>`:data` cannot be set directly.
+> **Note:** <br/>Use `:update` to add or update data.
+
+
+
+<a name='update'></a>
+### :update
+
+`:update` sets new or updates existing data values:
+
+```ruby
+result = ResultVault.new(age: 9.75)
+result.success? #=> false
+result.age      #=> 9.75
+result.name     #=> Undefined method `name'
+
+result.update(success: true, age: 23, name: 'Tester')
+
+result.success? #=> true
+result.age      #=> 23
+result.name     #=> 'Tester'
+end
+
+num_array = [1,2,3,4,5]
+result    = average(num_array)
+result.data #=> {:total=>15, :size=>5, :average=>3, :success=>true, :status=>nil, :error_message=>""}
+```
 
 ---
 
