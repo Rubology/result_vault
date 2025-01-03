@@ -12,18 +12,16 @@
 [//]: # "#####             BADGES               #####"
 [//]: # "############################################"
 
+## Status
 
-| Main Branch| Dev Branch|
-|---|---|
-| ![ruby 3.3](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_3.yml/badge.svg?branch=main) | ![ruby 3.3](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_3.yml/badge.svg?branch=dev) |
-| ![ruby 3.2](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_2.yml/badge.svg?branch=main) | ![ruby 3.2](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_2.yml/badge.svg?branch=dev) |
-| ![ruby 3.1](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_1.yml/badge.svg?branch=main) | ![ruby 3.1](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_1.yml/badge.svg?branch=dev) |
-| ![ruby 3.0](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_0.yml/badge.svg?branch=main)  | ![ruby 3.0](https://github.com/Rubology/result_vault/actions/workflows/ruby_3_0.yml/badge.svg?branch=dev)  |
-| ![ruby 2.7](https://github.com/Rubology/result_vault/actions/workflows/ruby_2_7.yml/badge.svg?branch=main) | ![ruby 2.7](https://github.com/Rubology/result_vault/actions/workflows/ruby_2_7.yml/badge.svg?branch=dev) |
-| &nbsp; |  |
-| [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](#license)  | [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](#license) |
-| [![Gem Version](https://badge.fury.io/rb/result_vault.svg)](https://badge.fury.io/rb/result_vault) | [![Gem Version](https://badge.fury.io/rb/result_vault.svg)](https://badge.fury.io/rb/result_vault) |
-| ![100% Coverage](https://github.com/Rubology/result_vault/actions/workflows/code_coverage.yml/badge.svg?branch=main) | ![100% Coverage](https://github.com/Rubology/result_vault/actions/workflows/code_coverage.yml/badge.svg?branch=dev) |
+![Build](https://github.com/Rubology/result_vault/actions/workflows/build.yml/badge.svg?branch=dev) 
+&nbsp;
+![100% Test Coverage](https://github.com/Rubology/result_vault/actions/workflows/code_coverage.yml/badge.svg?branch=dev)
+&nbsp;
+[![Gem Version](https://badge.fury.io/rb/result_vault.svg)](https://badge.fury.io/rb/result_vault)
+&nbsp;
+[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](#license)
+
 
 
 
