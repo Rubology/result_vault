@@ -14,9 +14,9 @@
 
 ## Status
 
-![Build](https://github.com/Rubology/result_vault/actions/workflows/build.yml/badge.svg?branch=dev) 
+![Build](https://github.com/Rubology/result_vault/actions/workflows/build.yml/badge.svg?branch=main) 
 &nbsp;
-![100% Test Coverage](https://github.com/Rubology/result_vault/actions/workflows/code_coverage.yml/badge.svg?branch=dev)
+![100% Test Coverage](https://github.com/Rubology/result_vault/actions/workflows/code_coverage.yml/badge.svg?branch=main)
 &nbsp;
 [![Gem Version](https://badge.fury.io/rb/result_vault.svg)](https://badge.fury.io/rb/result_vault)
 &nbsp;
