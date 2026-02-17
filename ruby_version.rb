@@ -2,11 +2,18 @@
 # Methods to work with the current ruby version at the MAJOR.MINOR level
 #
 module RubyVersion
+	require 'open-uri'
+	require 'rubygems'
+	
 	class << self
 
 		# Returns the latest known version of Ruby
 		def latest_version
-			Gem::Version.new('3.4')
+			@latest_version ||= begin
+														Gem::Version.new(latest_ruby_lang_version)
+													rescue
+														Gem::Version.new("4.0")
+													end
 		end
 
 
@@ -66,11 +73,7 @@ module RubyVersion
 
 		# Returns the string filename for the current ruby version gemfile
 		def gemfile
-			if current == refined("2.7")
-				"gemfiles/ruby-#{current.to_s.gsub('.','-')}/Gemfile"
-			else
-				"gemfiles/ruby-3/Gemfile"
-			end
+			"gemfiles/ruby-#{current.to_s.gsub('.','-')}/Gemfile"
 		end
 
 
@@ -87,5 +90,20 @@ module RubyVersion
 			refined_version = Gem::Version.new(version).release.segments[0..1].join('.')
 			Gem::Version.new(refined_version)
 		end
+	end
+	
+
+	def latest_ruby_version
+		ruby_lang_url = 'https://cache.ruby-lang.org/pub/ruby/index.txt'
+		content = URI.open(ruby_lang_url, &:read)
+
+		versions = content.lines.filter_map do |line|
+				# Each line looks like: "ruby-3.3.0.tar.gz  3.3.0 ..."
+				if line =~ /\bruby-(\d+\.\d+\.\d+)/
+						Gem::Version.new($1)
+				end
+		end
+
+		refined(versions.max.to_s)
 	end
 end
