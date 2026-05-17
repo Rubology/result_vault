@@ -53,7 +53,7 @@ class ResultVault
   # @return [Symbol, String, *, nil]
   #
   def status
-    @status
+    @status ||= nil
   end
 
 
