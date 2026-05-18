@@ -5,12 +5,13 @@ require_relative 'lib/result_vault/version'
 Gem::Specification.new do |spec|
   spec.name    = 'result_vault'
   spec.version = ResultVault::VERSION
-  spec.summary = 'When your method needs to return more than a single value.'
+  spec.summary = 'The easy way to return multiple values from a single method.'
 
   spec.description = %(
-    When your method needs to return more than a single value,
-    ResultVault is a pure ruby solution that lets you add all
-    the extra bits you need while still returning a single object.
+    A pure ruby solution for returning multiple values from a
+    single method call. ResultVault lets you dynamically add
+    attributes to the result object by simply defining them:
+    `result.my_name = 'CodeMeister'`.
   ).gsub("\n", ' ')
 
   spec.authors = ['CodeMeister']

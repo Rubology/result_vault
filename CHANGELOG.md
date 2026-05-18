@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 1.4.1
+- Updated Gemspec information
+
 ## 1.4.0
 - New method `:update` added.
   - The :update method accepts data to be added in the format `key: value`.
@@ -13,4 +16,3 @@
 
 ## 1.2.3
 - Initial public release
-
